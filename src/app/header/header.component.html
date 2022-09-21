@@ -1,4 +1,4 @@
-<p>header works!</p>
+<!-- <p>header works!</p>
 <input id="enter" type="text" (keyup)="onclick($event)"  [(ngModel)]="twoway"/>
 <p>{{title}}</p>
 <button [disabled]="isdisabled"(click)="myButton()">click me</button>
@@ -10,8 +10,9 @@
 </ul>
 <p> {{company|json}}</p>
 <ul>
-    <li *ngFor="let companies of company,index as i,even as iseven">{{i|json}}{{iseven}}</li>
+    <li *ngFor="let companies of company,index as i,even as iseven">{{i|json}}{{iseven}}{{companies|json}}</li>
 </ul>
 <ul>
     <li *ngFor="let planet of planets;index as i,first as isfirst,odd as isodd,even as iseven">{{planet}} {{i+1}} {{isfirst}}  {{isodd}}  {{iseven}}</li>
 </ul>
+<p *ngFor="let companies of company">{{companies|json}}</p> -->

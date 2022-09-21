@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="datas">
+<button (click)="get()"ngClass="btn">click me</button>
+<ng-container *ngFor="let list of arr">
+    <input type="checkbox"(click)="getcheck()"[(ngModel)]="list.ischecked">
+    <label for=""[ngStyle]="{'text-decoration':list.ischecked?'line-through':'none'}">{{list.name}}</label>
+    
+</ng-container>

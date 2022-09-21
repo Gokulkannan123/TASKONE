@@ -1,0 +1,3 @@
+<ng-container *ngFor="let users of usersList,index as i">
+    <app-userdetails [user]="users" [index]="i" (newEdit)="removed($event)"></app-userdetails>
+</ng-container>

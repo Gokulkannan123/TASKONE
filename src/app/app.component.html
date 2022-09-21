@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <head>
 
   </head>
@@ -10,3 +10,17 @@
     </div>
   </body>
 </html>
+<app-child (newItemEvent)="emit($event)"></app-child>
+<app-userlist></app-userlist> 
+ <ul>
+  <li *ngFor="let user of new">{{user}}</li>
+</ul> -->
+
+<!-- <app-userlist></app-userlist> -->
+<!-- <ng-container *ngFor="let data of datas"> -->
+  <app-todolist (newEdit)="get($event)"></app-todolist>
+
+<ng-container *ngFor="let data of list">
+  <app-listdetail [Edit]="data"></app-listdetail>
+</ng-container>
+<!-- <app-list></app-list> -->
