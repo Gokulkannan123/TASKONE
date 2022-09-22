@@ -11,6 +11,10 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { ListdetailComponent } from './listdetail/listdetail.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { ListComponent } from './list/list.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { Component1Component } from './component1/component1.component';
+import { Component2Component } from './component2/component2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,11 @@ import { ListComponent } from './list/list.component';
     UserdetailsComponent,
     ListdetailComponent,
     TodolistComponent,
-    ListComponent
+    ListComponent,
+    AboutusComponent,
+    ContactusComponent,
+    Component1Component,
+    Component2Component
   ],
   imports: [
     BrowserModule,
