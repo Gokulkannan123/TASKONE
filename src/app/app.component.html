@@ -24,11 +24,15 @@
   <app-listdetail [Edit]="data"></app-listdetail>
 </ng-container> -->
 <!-- <app-list></app-list> -->
-<ul class="back">
- <a routerLink="aboutus">Aboutus</a>    
-  <a routerLink="contactus">Contactus</a>
-  <a routerLink="component1">Component1</a>
-  <a routerLink="component2">Component2</a>
-</ul>
+<div class="back" style="column-gap: 40px;display: flex;">
+ <a style="color: white;" routerLink="aboutus">Aboutus</a>    
+  <a style="color: white; " routerLink="contactus">Contactus</a>
+  <a style="color: white;" routerLink="component1">Component1</a>
+  <a style="color: white;" routerLink="component2">Component2</a>
+
+</div>
+
 <router-outlet>
 </router-outlet>
+
+

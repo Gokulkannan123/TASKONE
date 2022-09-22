@@ -6,7 +6,7 @@ import { Component2Component } from './component2/component2.component';
 import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [{
-  path: 'aboutus',
+  path: ':aboutus',
   component: AboutusComponent,
   children: [{
     path: 'component1',
