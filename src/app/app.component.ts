@@ -17,3 +17,4 @@ export class AppComponent {
 this.list.push(event)
   }
   }
+

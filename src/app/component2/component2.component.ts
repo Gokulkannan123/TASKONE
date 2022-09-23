@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 
 @Component({
   selector: 'app-component2',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component2Component implements OnInit {
 
-  constructor() { }
+  constructor(private nav:Router,private router:ActivatedRoute) { }
 
   ngOnInit(): void {
   }
+get(){
+this.nav.navigate(['pagenotfound'],{relativeTo:this.router})
+console.log("works");
 
+}
 }
