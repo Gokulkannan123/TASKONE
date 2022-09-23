@@ -6,8 +6,14 @@ import { Component2Component } from './component2/component2.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
-const routes: Routes = [{
-  path: ':aboutus',
+const routes: Routes = [ 
+  {
+    path:'',
+    redirectTo:'component1',
+    pathMatch:'prefix'
+  },
+  {
+  path: 'aboutus',
   component: AboutusComponent,
   children: [{
     path: 'component1',

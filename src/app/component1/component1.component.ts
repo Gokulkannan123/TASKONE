@@ -14,7 +14,6 @@ export class Component1Component implements OnInit {
     // to get id or token from url
     this.route.params.subscribe((data)=>{
 console.log(data);
-
     })
   }
 
